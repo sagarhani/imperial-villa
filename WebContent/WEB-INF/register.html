@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"> 
+function validate(){
+
+	var name=document.fo1.uname.value;
+	 
+	alert("welcome "+name);
+	
+	return false;
+}
+function index(){
+	
+	var uname=document.fo1.uname.value;
+	if(uname==null || uname=="")
+		{
+		return false;
+		}
+	
+	
+}
+
+				
+				
+				</script>
+<meta charset="UTF-8">
+<title>Register</title>
+</head>
+<body bgcolor="orange">
+<div align="center" style="margin-top: "50%;">
+		<h1>You don't have a Account? <br> Create a New Account Now</h1>
+		<form name="fo1" onsubmit="return validate();" method="get" action="/welcome.html">
+		<p>Enter your Username :<input name="uname" type="text" placeholder="Username" >
+		<p>Enter your Email-ID :<input type="text" placeholder="Email-ID">
+		<p>Enter your Password :<input name="password" type="password" placeholder="Password">
+		</br>
+		<br/>Gender: male<input type="radio"> female<input type="radio">
+		<br/>
+		<br/>
+		Enter your county name : <input type="search" placeholder="County">
+		</br> </br>
+				<a href="welcome.html" style="text-decoration: "none;"> <input type="submit" value="Create a New Account"> </a>
+				
+		</form>
+	</div>
+</body>
+</html>
